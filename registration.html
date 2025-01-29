@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+   <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+  
+    <div id="branding">PawHub</div>
+
+    <!-- Registration Form -->
+    <div id="form-container">
+        <form action="" method="post">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="name" placeholder="Enter your full name" required>
+
+            <label for="semail">Email:</label>
+            <input type="email" id="semail" name="email" placeholder="Enter your email" required>
+
+            <label for="phno">Phone Number:</label>
+            <input type="tel" id="phno" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-pwd">Confirm Password:</label>
+            <input type="password" id="confirm-pwd" name="confirm-password" placeholder="Confirm password" required>
+
+            <button type="submit">Register</button>
+            <div id="existing-user">
+                Already an existing user? <a href="login.html">Login here</a>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

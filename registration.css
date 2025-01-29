@@ -1,0 +1,142 @@
+body {
+    background-color: pink;
+    color: rgb(70, 60, 49);
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url("pup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh; 
+}
+
+#form-container {
+    position: absolute;
+    right: 20px; /* Adjust this value to move the form closer or farther from the right edge */
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 350px; /* Reduced width to make the form smaller */
+    background: #92c3da;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h5 {
+    text-align: center;
+    background-color: rgb(236, 232, 226);
+    color: black;
+    font-size: 1.2rem; /* Reduced font size */
+    padding: 10px;
+    margin-bottom: 15px; /* Reduced margin */
+    border-radius: 5px;
+}
+
+#branding {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(-50%);
+    font-size: 15rem; /* Reduced font size */
+    font-weight: bold;
+    align-items: center;
+    color: rgb(255, 251, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap between form elements */
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 1px;
+    display: block;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    font-size: 12px; /* Reduced font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 80px; /* Reduced height */
+}
+
+button {
+    background-color: rgb(96, 10, 235);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(70, 8, 180);
+}
+
+select {
+    appearance: none;
+    background-color: white;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(96, 10, 235);
+    box-shadow: 0 0 5px rgba(96, 10, 235, 0.5);
+}
+
+#existing-user {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+#existing-user a {
+    color: rgb(96, 10, 235);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#existing-user a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #form-container {
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: 350px; /* Adjusted max-width */
+        right: 10px; /* Adjusted right position */
+    }
+    #branding {
+        font-size: 3rem; /* Adjusted font size for smaller screens */
+        left: 5%;
+    }
+}
+
+@media (max-width: 500px) {
+    #form-container {
+        padding: 15px;
+    }
+
+    h5 {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    input, textarea, button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    #branding {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+}

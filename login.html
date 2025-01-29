@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #e75eb9;
+            color: rgb(70, 60, 49);
+            font-family: 'Arial', sans-serif;
+            background-image: url("2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            height: 100vh; /* Ensure full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form Container Styling */
+        #form-container {
+            width: 100%;
+            max-width: 500px;
+            background: #e6a2a6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styling */
+        h5 {
+            text-align: center;
+            color: #333;
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #14171b;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Focus Styling */
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        /* New User Section */
+        #new-user {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        #new-user a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #new-user a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #form-container {
+                width: 100%;
+                max-width: 500px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #form-container {
+                padding: 15px;
+            }
+
+            h5 {
+                font-size: 1.2rem;
+            }
+
+            input, button {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="form-container">
+        <h5>Login</h5>
+        <form action="" method="post">
+            <label for="semail">Email:</label>
+            <input type="email" id="semail" name="email" placeholder="Enter your email" required>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+            <div id="new-user">
+                New User? <a href="registration.html">Register here</a>
+            </div>
+            <div id="new-user">
+            <a href="home.html">Back to Home</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
